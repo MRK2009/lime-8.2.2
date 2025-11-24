@@ -691,10 +691,10 @@ class NativeApplication
 
 @:keep /*private*/ class ApplicationEventInfo
 {
-	public var deltaTime:#if lime_use_old_deltatime Int #else Float #end;
+	public var deltaTime:Int;
 	public var type:ApplicationEventType;
 
-	public function new(type:ApplicationEventType = null, deltaTime:#if lime_use_old_deltatime Int #else Float #end = 0)
+	public function new(type:ApplicationEventType = null, deltaTime:Int = 0)
 	{
 		this.type = type;
 		this.deltaTime = deltaTime;
