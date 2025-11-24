@@ -17,7 +17,7 @@ jobs:
 
   publisher:
     needs: [android, ios, linux, mac, windows, miscellaneous]
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
